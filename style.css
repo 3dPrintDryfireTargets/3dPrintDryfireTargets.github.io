@@ -105,8 +105,16 @@ ul {
   transform: translateY(1px);
 }
 
-.footer {
-  margin-top: 18px;
+.license {
+  margin-top: 24px;
+  padding-top: 16px;
+  padding-left: 16px;
+  border-top: 1px solid var(--border);
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+}
+
+.license a {
+  color: var(--text);
+  text-decoration: underline;
 }
