@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3D Print Dry Fire Pack + PVC Stands</title>
+  <meta name="description" content="Download a .zip file containing 3D printing files for the targets and build instructions for the stands." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="wrap">
+    <header class="header">
+      <h1>3D Print Pack</h1>
+      <p class="subtitle">
+        One ZIP file with printable parts + build instructions.
+      </p>
+    </header>
+
+    <section class="card">
+      <img class="preview" src="assets/targets.jpg" alt="Preview of the printed design" />
+
+      <div class="meta">
+        <h2>What’s inside:</h2>
+        <ul>
+          <li><strong>STL files for targets</strong></li>
+          <li><strong>Build guide for the stands</strong></li>
+          <li><strong>Requirements for creation</strong> (parts + materials list)</li>
+        </ul>
+
+        <div class="details">
+          <p><strong>ZIP name:</strong> <span id="zipName">dryfire-3d-print-files.zip</span></p>
+          <p><strong>Version:</strong> <span id="zipVersion">v1.0</span></p>
+          <p><strong>Last updated:</strong> <time id="zipDate" datetime="2026-02-06">Feb 6, 2026</time></p>
+        </div>
+
+        <div class="actions">
+          <a
+            class="btn"
+            href="downloads/dryfire-3d-print-files.zip"
+            download
+            aria-label="Download the ZIP file"
+          >
+            Download ZIP
+          </a>
+
+          <button class="btn secondary" id="copyLink" type="button">
+            Copy link
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    const copyBtn = document.getElementById("copyLink");
+    copyBtn.addEventListener("click", async () => {
+      const url = new URL("downloads/dryfire-3d-print-files.zip", window.location.href).toString();
+      try {
+        await navigator.clipboard.writeText(url);
+        copyBtn.textContent = "Copied!";
+        setTimeout(() => (copyBtn.textContent = "Copy link"), 1200);
+      } catch {
+        prompt("Copy this link:", url);
+      }
+    });
+  </script>
+</body>
+</html>
