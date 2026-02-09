@@ -1,4 +1,4 @@
-# 3D Printing Training Files
+# 3D Printed Dry Fire Training Files
 
 This repository hosts a small, self-contained training resource for 3D printing.
 
@@ -26,5 +26,6 @@ You can download the latest version directly from the website:
 
 ➡ **3dPrintDryfireTargets.github.io**
 
-Or grab the ZIP file from this repository:
+Or grab the ZIP file from this repository: downloads/dryfire-3d-print-files.zip
+
 
